@@ -1,0 +1,127 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+
+name:
+  display: 陈志伟
+  given: 志伟
+  family: 陈
+  alternate: Chen Zhiwei
+  pronunciation: ""
+  pronouns: ""
+
+status:
+  icon: "🤖"
+
+role: AI Agent · 推荐系统 · 电子信息与通信
+
+bio: |
+  电子信息工程本科背景，具备 Python/PyTorch、计算机视觉与软硬件协同实践。
+  面向汽车智能化命题，围绕有状态 Agent、中文工具调用与推荐系统评测，
+  完成开源框架研习与二次开发方案设计。
+
+affiliations:
+  - name: 上海交通大学
+    url: ""
+
+links:
+  - icon: at-symbol
+    url: mailto:2245069575@qq.com
+    label: 发送邮件
+  - icon: hero/phone
+    url: tel:+8615872692752
+    label: 15872692752
+
+interests:
+  - AI Agent 与多智能体工作流
+  - 推荐系统
+  - Function Calling 与 MCP
+  - 检索增强生成（RAG）
+  - 汽车智能化
+
+education:
+  - degree: 电子信息与通信（硕士）
+    institution: 上海交通大学
+    start: 2026-09-01
+  - degree: 电子信息工程（本科）
+    institution: 武汉大学
+    start: 2022-09-01
+    end: 2026-06-30
+    summary: |
+      GPA：3.49/4.0，专业排名前 50%。
+
+      核心课程：电路分析（92）、模拟电路（89）、数字信号处理（87）。
+
+experience:
+  - role: LangGraph 有状态多智能体工作流复现
+    org: 独立复现与工作流开发
+    start: 2025-07-01
+    end: 2025-09-30
+    summary: |
+      **技术：** Python、LangGraph、StateGraph、Checkpoint、Human-in-the-loop
+
+      - 从源码安装并跑通状态图示例，梳理状态写入、路由选择及中断恢复机制。
+      - 面向汽车选买任务实现“需求澄清 - 知识检索 - 车型召回 - 证据解释 - 风险检查”5 类节点，定义用户约束、候选车型、证据来源、工具结果 4 类状态字段。
+      - 配置检查点持久化、节点失败重试与人工确认路径，验证中断后续跑和人工修订状态，使一次性问答转为可恢复、可追踪、可审阅的 Agent 工作流。
+
+  - role: Qwen-Agent 中文问答与工具调用复现
+    org: 独立复现与工具接口开发
+    start: 2025-07-01
+    end: 2025-09-30
+    summary: |
+      **技术：** Qwen-Agent、Function Calling、MCP、RAG、Code Interpreter
+
+      - 完成基础对话、Function Calling、RAG、Code Interpreter/MCP 等示例复现，梳理模型服务、Agent 配置、工具注册与消息循环 4 个关键模块。
+      - 封装车型查询、多车对比、手册检索、费用计算 4 类工具及统一 JSON 输入输出协议，串联并行、多步和多轮调用。
+      - 针对超时、空召回、参数冲突设计 3 类降级分支，将口语需求解析为结构化约束，输出可执行的候选清单。
+
+  - role: RecBole 推荐算法训练与评测复现
+    org: 独立复现与离线评测
+    start: 2025-09-01
+    end: 2025-11-30
+    summary: |
+      **技术：** Python、PyTorch、RecBole、BPR、LightGCN、SASRec
+
+      - 搭建 RecBole 数据处理、模型训练与评测环境，复现 BPR、LightGCN、SASRec 3 个模型。
+      - 统一数据切分、随机种子与配置文件，使用 Recall@K、NDCG@K、Coverage、多样性 4 类指标组织横向对比。
+      - 面向车型推荐设计“规则过滤 + 模型召回 + 多目标重排”链路，补充冷启动切分与重排特征配置，形成可复用的离线基线。
+
+skills:
+  - name: Agent 编排
+    items:
+      - label: LangGraph / StateGraph
+        level: 4
+      - label: Checkpoint / Human-in-the-loop
+        level: 4
+      - label: 多智能体工作流
+        level: 4
+  - name: LLM 应用
+    items:
+      - label: Qwen-Agent / RAG
+        level: 4
+      - label: Function Calling / MCP
+        level: 4
+      - label: 工具协议与异常降级
+        level: 4
+  - name: 推荐系统
+    items:
+      - label: Python / PyTorch / RecBole
+        level: 4
+      - label: BPR / LightGCN / SASRec
+        level: 3
+      - label: Recall / NDCG 离线评测
+        level: 4
+
+awards:
+  - title: 武汉大学甲等奖学金、三好学生
+    awarder: 武汉大学
+    summary: 在校期间获得甲等奖学金与三好学生荣誉。
+    icon: hero/trophy
+  - title: 第十七届“华中杯”大学生数学建模挑战赛三等奖
+    awarder: 华中杯大学生数学建模挑战赛
+    date: "2025-01-01"
+    icon: hero/trophy
+  - title: 志愿服务与社会活动荣誉
+    awarder: 武汉大学
+    summary: 优秀青年志愿者、社会活动积极分子、心理健康积极分子。
+    icon: hero/heart
